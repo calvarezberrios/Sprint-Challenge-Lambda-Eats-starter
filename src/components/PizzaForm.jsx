@@ -177,7 +177,7 @@ const PizzaForm = () => {
                         Enter Your Name<br />
                         <span className = {errors.name.length > 0 ? "errorMessage" : "error"}>{errors.name.length > 0 ? errors.name : "Required"}</span>
                     </Label>
-                    <Input type="text" name="name" id="name" value = {order.name} onChange = {handleChange} placeholde = "Name" />
+                    <Input type="text" name="name" id="name" value = {order.name} onChange = {handleChange} placeholde = "Name" data-cy="name"/>
                 </FormGroup>
 
                 <FormGroup>
